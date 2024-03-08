@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Cera pro", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-line{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #EAECEE solid;
+}
+
+.links{
+    height: 53px;
+    width: 1448px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.link{
+    color: #20262D;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 70%;
+    font-size: 15px;
+}
+
+.information-line{
+    position: relative;
+    width: 100%;
+    height: 108px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.information{
+    position: relative;
+    height: 100%;
+    width: 1448px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.logo{
+    width: 132px;
+    height: 47px;
+}
+
+.information input{
+    background-color: #EAECEE;
+    border: none;
+    border-radius: 10px;
+    width: 490px;
+    height: 48px;
+    outline: none;
+}
+
+.information input[type=text]{
+    font-size: 16px;
+    padding-left: 22px;
+}
+
+.information input::placeholder{
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 40%;
+    color: #20262D;  
+} 
+
+form button{
+    background: none;
+    position: relative;
+    border: none;
+    opacity: 30%;
+    float: right;
+    right: 48px;
+}
+
+
+.information img{
+    float: left;
+    padding-right: 10px;
+}
+
+.information p{
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+}
