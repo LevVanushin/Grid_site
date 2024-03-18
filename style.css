@@ -16,8 +16,8 @@ a{
 }
 
 .container{
-    height: 100%;
-    width: 100%;
+    max-width: 1448px;
+    margin: auto;
 }
 
 .header-line{
@@ -25,11 +25,11 @@ a{
     height: 100%;
     justify-content: center;
     border-bottom: 1px #EAECEE solid;
-
 }
 
+
 .links{
-    width: 1448px;
+    max-width: 100%;
     min-height: 53px;
 
     align-items: center;
@@ -58,6 +58,7 @@ a{
         justify-content: center;
         width: 100%;
         height: 108px;
+        
     }
     .information{
         height: 100%;
@@ -93,6 +94,7 @@ a{
 }
 
 .information input[type=text]{
+    position: relative;
     font-size: 16px;
     padding-left: 22px;
 }
@@ -133,7 +135,6 @@ form img{
 }
 
 @media (max-device-width: 1240px){
-
     header{
         padding-bottom: 30px;
     }
@@ -145,6 +146,8 @@ form img{
         height: 100%;
 
         align-self: center;
+        align-self: center;
+        justify-self: center;
     }
     .information{
         width: 100%;
@@ -172,6 +175,74 @@ form img{
     }
 }
 
+@media (max-device-width: 528px){
+    header{
+        padding-bottom: 50px;
+    }
+
+    .information-line{
+        position: relative;
+       
+        width: 100%;
+        height: 100%;
+
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .information input{
+        align-self: center;
+        justify-self:center ;
+        background-color: #EAECEE;
+        border: none;
+        border-radius: 10px;
+        width: 290px;
+        height: 48px;
+        outline: none;
+    
+        float: left;
+    }
+    .information{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .logo{
+        position: relative;
+        top: 10px;
+        justify-content: center;
+    }
+    .adaptive{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .adaptive-element{
+        border: none;
+    }
+}
+
+@media (max-device-width:328px){
+    .information input{
+        align-self: center;
+        justify-self:center ;
+        background-color: #EAECEE;
+        border: none;
+        border-radius: 10px;
+        width: 190px;
+        height: 48px;
+        outline: none;
+    
+        float: left;
+    }
+}
 
 /* MAIN STYLES */
 
@@ -179,22 +250,23 @@ form img{
 main{
     width: 100%;
     height: 100%;
-   
-    align-items: center;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.stats{
-    position: relative;
-    width: 1448px;
-    display: grid;
 
+
+.stats{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 300px));
+    
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
+    
+    grid-auto-flow: dense;
 }
 
 
@@ -205,10 +277,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 
+    width: 685px;
     height: 468px;
-
     border-radius: 15px;
 
     background-color: #087aee;
@@ -266,16 +338,16 @@ main{
 
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    align-items: center;
 
     border-radius: 15px;
-    align-items: center;
-    justify-content: end;
 }
 
 .btn-trial{
     position: relative;
-    bottom: 70px;
 
+    bottom: 70px;
     width: 175px;
     height: 56px;
 
@@ -302,6 +374,7 @@ main{
 .info-university li{
 
     height: 94.5px;
+    width: 100%;
 
     border-radius: 15px;
 
@@ -331,25 +404,35 @@ main{
 .average-mark{
     position: relative;
 
-    width: 1448px;
-    height: 473px;
+    height: auto;
+    width: 100%;
+    
 
+    align-self: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     row-gap: 30px;
+
+    padding-bottom: 80px;
+    margin-top: 80px;
 }
 
+
+
 .table{
-    width: 1085px;
-    height: 135px;
-
-    padding: 40px 323px 40px 40px;
-
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 40px 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(134.43px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(134.43px, 100px));
+    
     background-color: #EFF7FF;
+
+    grid-gap: 24px;
+
     border-radius: 10px;
 
     font-size: 18px;
@@ -367,42 +450,37 @@ main{
     font-weight: 700;
 }
 .average-mark h1{
-    
-    align-self: flex-start;
-
+    position: relative;
     font-size: 45px;
+    align-self: start;
     font-weight: 700;
-    bottom: 30px;
 }
 
-.table-bg{
-    position: absolute;
-    align-self: end;
-    width: 477px;
-    height: 398px;
-    z-index: 2;
-    
-    left: 1076px;
-}
+
 
 .container-categories{
     width: 100%;
     display: flex;
+    flex-direction: column;
     height: 711px;
     background-color: #EFF7FF;
     justify-content: center;
     align-items: center;
 }
+
 .info-categories{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1448px;
+    width: 100%;
+    
     height: 100%;
 
     background-color: #EFF7FF;
 
     row-gap: 50px;
+
+    flex-wrap: wrap;
 }
 
 .caption-line{
@@ -472,10 +550,13 @@ main{
 
 .info-line{
     position: relative;
+    
     height: 146px;
+
     display: grid;
     column-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(602px, 1fr));
+
 }
 
 .info-line p{
@@ -528,4 +609,148 @@ main{
     padding: 8px 12px 8px 12px;
 
     margin-top: 10px;
+}
+
+.programs{
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    row-gap: 30px;
+
+    margin-top: 70px;
+}
+
+.first-line{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.first-line h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.first-line button{
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #087AEE;
+    background-color: rgba(8, 122, 238, 5%);
+    padding: 18px 12px 18px 12px;
+
+    font-weight: 700;
+    font-size: 14px;
+
+    border-radius: 10px;
+}
+
+.second-line{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(339.5px, 100px));
+    grid-gap: 30px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.block img{
+    width: 339.5px;
+    height: 220px;
+
+    border-radius: 10px;
+}
+
+.block h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: #20262D;
+}
+
+.block p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #20262D;
+    opacity: 60%;
+}
+
+
+.speciality{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+
+    margin-top: 140px;
+}   
+
+.speciality .first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speciality .second-line{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(462.67px, 1fr));
+}
+
+.speciality .second-line h1{
+    color: #20262D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.special-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+
+    margin-top: 140px;
+}
+
+.news .first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news .second-line{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(462.67px, 1fr));
+}
+
+.news .second-line h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.news .second-line p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 60%;
 }
