@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <div class="container">
         <header>
             <div class="header-line">
                 <ul class="links">
@@ -36,6 +35,7 @@
 
                 </ul>
             </div>
+        </header>
 
             <div class="information-line">
                 <ul class="information">
@@ -75,7 +75,7 @@
                         </li>
                 </ul>
             </div>
-        </header>
+        <div class="container">
 
         <main>
 
@@ -128,7 +128,7 @@
             <div class="average-mark">
                 <h1>Средний балл ЕГЭ</h1>
                  <div class="table">
-                    <div class="column">
+                    <div class="column" style="">
                         <p>Год</p>
                         <p style="font-weight: 700; color: #087AEE;">Бюджет</p>
                         <p style="font-weight: 700; color: #20262D;">Платное</p>
@@ -169,18 +169,24 @@
                         <p  style="color: #20262D; opacity:40%">нет данных</p>
                         <p>67.91</p>
                     </div>
+                    <img class="man" src="./images/bg-man.png">
 
                 </div>
+
+
             </div>
         </div>
+
             <div class="container-categories">
+
                 <div class="info-categories">
 
                     <div class="caption-line">
 
                         <h1>Об университете «Lancman School»</h1>
-                        <p style="background-color: #087AEE;">Негосударственный</p>
-                        <p style="background-color: #0CCD93;margin-left: 20px;">Общежитие</p>
+
+                        <p style="background-color: #087AEE; margin-right: 20px;">Негосударственный</p>
+                        <p style="background-color: #0CCD93;">Общежитие</p>
 
                     </div>
                         <div class="grid-line">
@@ -230,14 +236,16 @@
                         </div>
 
                         <div class="info-line">
-                            <p>Московский финансово-промышленный университет Синергия готовит управленцев для различных отраслей экономики, финансистов, предпринимателей, юристов, маркетологов, IT-специалистов, лингвистов и переводчиков, журналистов, преподавателей, дизайнеров и других специалистов по востребованным на рынке труда направлениям.</p>
+                            <div class="allow-line">
+                                <p>Московский финансово-промышленный университет Синергия готовит управленцев для различных отраслей экономики, финансистов, предпринимателей, юристов, маркетологов, IT-специалистов, лингвистов и переводчиков, журналистов, преподавателей, дизайнеров и других специалистов по востребованным на рынке труда направлениям.</p>
+                                <button class="btn-line" type="button">РАЗВЕРНУТЬ</button>
+                            </div>
                             <div class="trial-exam">
                                 <h1>Пробное<br/>занятие</h1>
 
                                 <button type="button">Записаться</button>
                                 
                             </div>
-                            <button class="btn-line" type="button">РАЗВЕРНУТЬ</button>
 
                         </div>
 
@@ -332,6 +340,7 @@
         </main> 
       </div>
     </div>
+    
     <footer>
         <div class="container-footer">
             <ul class="contacts">
@@ -349,7 +358,6 @@
                 <li>Публичная оферта</li>
                 <li>Политика обработки персональных данных</li>
             </ul>
-
             
         </div>
 
@@ -357,6 +365,7 @@
     </footer>
 </div>
     
+    <script src="./script.js"></script>
 </body>
 
 </html>
